@@ -78,6 +78,18 @@
                         </configuration>
                     </execution>
                     <execution>
+                        <id>download-min-js-map</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>download-single</goal>
+                        </goals>
+                        <configuration>
+                            <url>${upstream.url}/js</url>
+                            <fromFile>jquery.terminal-${upstream.version}.min.js.map</fromFile>
+                            <toFile>${destDir}/jquery.terminal.min.js.map</toFile>
+                        </configuration>
+                    </execution>
+                    <execution>
                         <id>download-css</id>
                         <phase>process-resources</phase>
                         <goals>
