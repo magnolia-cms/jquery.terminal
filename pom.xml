@@ -85,7 +85,7 @@
                         </goals>
                         <configuration>
                             <url>${upstream.url}/js</url>
-                            <fromFile>jquery.terminal-${upstream.version}.min.js.map</fromFile>
+                            <fromFile>jquery.terminal.min.js.map</fromFile>
                             <toFile>${destDir}/jquery.terminal.min.js.map</toFile>
                         </configuration>
                     </execution>
